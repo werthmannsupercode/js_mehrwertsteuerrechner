@@ -11,10 +11,10 @@ let resultergebnis = document.getElementById('resultergebnis');
 
 function brutto() {
     if (plusMwst.checked) {
-        bruttoodernetto.innerHTML = "<p>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro <span>*</span></p>"; ergebnis.innerHTML = '<p class="left4">Bruttobetrag(Endpreis)</p>';
+        bruttoodernetto.innerHTML = "<p class='rq'>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro <span>*</span></p>"; ergebnis.innerHTML = '<p class="left4">Bruttobetrag(Endpreis)</p>';
     }
     else if (minusMwst.checked) {
-        bruttoodernetto.innerHTML = "<p>Bruttobetrag (Preis mit Mehrwertsteuer) in Euro <span>*</span></p>";
+        bruttoodernetto.innerHTML = "<p class='rq'>Bruttobetrag (Preis mit Mehrwertsteuer) in Euro <span>*</span></p>";
         ergebnis.innerHTML = '<p class="left5">Nettobetrag</p>';
     }
 }

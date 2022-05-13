@@ -88,3 +88,7 @@ section article form p,
     color: blue;
     font-weight: bold;
 }
+
+.rq span {
+    color: red;
+}
