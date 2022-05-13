@@ -24,18 +24,18 @@ function berechnen() {
         if (neunzehnProzent.checked) {
             let resultmwst1 = Number(betrag.value) * 0.19;
             let rm1 = resultmwst1.toFixed(2);
-            resultmwst.innerHTML = rm1;
+            resultmwst.innerHTML = rm1 + "€";
             let resultbrutto1 = Number(betrag.value) * 1.19;
             let rb1 = resultbrutto1.toFixed(2);
-            resultergebnis.innerHTML = rb1;
+            resultergebnis.innerHTML = rb1 + "€";
         }
         else if (siebenProzent.checked) {
             let resultmwst2 = Number(betrag.value) * 0.07;
             let rm2 = resultmwst2.toFixed(2);
-            resultmwst.innerHTML = rm2;
+            resultmwst.innerHTML = rm2 + "€";
             let resultbrutto2 = Number(betrag.value) * 1.07;
             let rb2 = resultbrutto2.toFixed(2);
-            resultergebnis.innerHTML = rb2;
+            resultergebnis.innerHTML = rb2 + "€";
         }
     }
 
@@ -43,18 +43,18 @@ function berechnen() {
         if (neunzehnProzent.checked) {
             let resultmwst3 = Number(betrag.value) - (Number(betrag.value) / 1.19);
             let rm3 = resultmwst3.toFixed(2);
-            resultmwst.innerHTML = rm3;
+            resultmwst.innerHTML = rm3 + "€";
             let resultnetto1 = Number(betrag.value) / 1.19;
             let rn1 = resultnetto1.toFixed(2);
-            resultergebnis.innerHTML = rn1;
+            resultergebnis.innerHTML = rn1 + "€";
         }
         else if (siebenProzent.checked) {
             let resultmwst4 = Number(betrag.value) - (Number(betrag.value) / 1.07);
             let rm4 = resultmwst4.toFixed(2);
-            resultmwst.innerHTML = rm4;
+            resultmwst.innerHTML = rm4 + "€";
             let resultnetto2 = Number(betrag.value) / 1.07;
             let rn2 = resultnetto2.toFixed(2);
-            resultergebnis.innerHTML = rn2;
+            resultergebnis.innerHTML = rn2 + "€";
         }
     }
 }
