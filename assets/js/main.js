@@ -23,15 +23,19 @@ function berechnen() {
     if (plusMwst.checked) {
         if (neunzehnProzent.checked) {
             let resultmwst1 = Number(betrag.value) * 0.19;
-            resultmwst.innerHTML = resultmwst1;
+            let rm1 = resultmwst1.toFixed(2);
+            resultmwst.innerHTML = rm1;
             let resultbrutto1 = Number(betrag.value) * 1.19;
-            resultergebnis.innerHTML = resultbrutto1;
+            let rb1 = resultbrutto1.toFixed(2);
+            resultergebnis.innerHTML = rb1;
         }
         else if (siebenProzent.checked) {
             let resultmwst2 = Number(betrag.value) * 0.07;
-            resultmwst.innerHTML = resultmwst2;
+            let rm2 = resultmwst2.toFixed(2);
+            resultmwst.innerHTML = rm2;
             let resultbrutto2 = Number(betrag.value) * 1.07;
-            resultergebnis.innerHTML = resultbrutto2;
+            let rb2 = resultbrutto2.toFixed(2);
+            resultergebnis.innerHTML = rb2;
         }
     }
 
