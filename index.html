@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mehrwertsteuerrechner</title>
+</head>
+
+<body>
+    <section>
+        <h1>Mehrwertsteuerrechner</h1>
+        <article>
+            <form onsubmit="return false">
+                <p>Was soll berechnet werden?</p>
+                <div class="wassollberechnetwerden">
+                    <input type="radio" name="wassollberechnetwerden" id="plusMwst" onclick="brutto()">
+                    <label for="plusMwst">Mehrwertsteuer aufschlagen (Netto zu Brutto)<br></label>
+                    <input type="radio" name="wassollberechnetwerden" id="minusMwst" onclick="brutto()">
+                    <label for="minusMwst">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+                </div>
+                <p class="border1">Mehrwertsteuersatz</p>
+                <div class="mehrwertsteuersatz">
+                    <input type="radio" name="mehrwertsteuersatz" id="neunzehnProzent">
+                    <label for="neunzehnProzent">19%</label>
+                    <input type="radio" name="mehrwertsteuersatz" id="siebenProzent">
+                    <label for="siebenProzent">7%</label>
+                </div>
+                <div class="border2">
+                    <div id="bruttoodernetto"></div>
+                    <input type='number' id='betrag' name='betrag' value='0.00'>
+                </div>
+                <div class="wrapbutton">
+                    <input type='submit' value='BERECHNEN' onclick='berechnen()' class="button">
+                </div>
+            </form>
+            <h2>Ergebnis</h2>
+            <p class="left1">Mehrwertsteuerbetrag</p>
+            <p id="resultmwst" class="left2"></p>
+            <div id="ergebnis"></div>
+            <p id="resultergebnis" class="left3"></p>
+        </article>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

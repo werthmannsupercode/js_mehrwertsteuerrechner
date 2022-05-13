@@ -1,0 +1,90 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 35vw;
+    margin: 10vh 32.5vw;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: grey;
+}
+
+section article {
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+    color: black;
+}
+
+section article h2 {
+    color: blue;
+    background-color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin: 0;
+    border-top: 2px solid grey;
+}
+
+section article form p,
+.wassollberechnetwerden,
+.mehrwertsteuersatz {
+    padding: 0 10px;
+}
+
+.border1,
+.border2 {
+    border-top: 2px solid white;
+    padding-top: 10px;
+}
+
+.wrapbutton {
+    background-color: white;
+    width: 100%;
+}
+
+.button {
+    margin-top: 10px;
+    width: 96%;
+    margin: 20px 2%;
+    padding: 5px 0;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#betrag {
+    margin-left: 10px;
+}
+
+#siebenProzent {
+    margin-bottom: 20px;
+}
+
+#nettoBetrag {
+    display: block;
+}
+
+#bruttoBetrag {
+    display: block;
+}
+
+#ergebnis {
+    border-top: 2px solid white;
+}
+
+.left1,
+.left2,
+.left3,
+.left4,
+.left5 {
+    padding-left: 10px;
+}
+
+.left2,
+.left3 {
+    color: blue;
+    font-weight: bold;
+}
